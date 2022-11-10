@@ -8,6 +8,7 @@ RUN npm install -g @angular/cli
 # add app
 COPY . /app
 # start app
+RUN ng analytics off
 CMD ng serve --host 0.0.0.0
 
 
