@@ -9,7 +9,7 @@ RUN npm install -g @angular/cli
 COPY . /app
 # start app
 RUN ng analytics off
-CMD ng serve --host 0.0.0.0
+CMD ng serve --host 0.0.0.0 --disable-host-check
 
 
 
